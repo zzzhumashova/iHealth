@@ -1,0 +1,41 @@
+name: ihealthapp
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  carousel_slider: ^4.2.1
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.0
+  shared_preferences: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:   
+    - assets/img/
+    - assets/img/profile_image.webp
+    - assets/img/streptodermiya2.jpg
+    - assets/img/exemaa.jpg
+    - assets/img/papiloma.jpg
+    - assets/img/kozhy.jpg
+    - assets/img/chesotka.jpeg
+    - assets/img/rak_legkogo.webp
+    - assets/img/rak_yaz.jpg
+    - assets/img/pancreatic.jpg
+    - assets/img/rak_zheludka.gif
+    - assets/img/rak_grudi.jpg
+    - assets/img/edvardca.jpg
+    - assets/img/mozgovoi.png
+    - assets/img/sindrom_dauna.webp
+    - assets/img/sindrom_turnera.webp
+    - assets/img/sindrom_uaildera.webp
