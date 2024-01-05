@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:splashapp/authentication/login.dart';
-// import 'package:splashapp/authentication/registration.dart';
-import 'progress_bar.dart'; 
+import 'package:ihealthapp/features/splashPage/progress_bar.dart';
 
 class Splash4 extends StatelessWidget {
   const Splash4({Key? key}) : super(key: key);
@@ -67,8 +65,8 @@ class Splash4 extends StatelessWidget {
                 // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => const RegisterScreen()));
               },
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFFBBF2EF), 
-                onPrimary: Colors.white,
+                backgroundColor: const Color(0xFFBBF2EF), 
+                foregroundColor: Colors.white, // используйте 'foregroundColor' вместо 'primary'
                 minimumSize: const Size(double.infinity, 60), 
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30), 
@@ -87,7 +85,7 @@ class Splash4 extends StatelessWidget {
                 // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => const LoginScreen()));
               },
               style: TextButton.styleFrom(
-                primary: const Color(0xFFBBF2EF), 
+                 foregroundColor: const Color(0xFFBBF2EF), 
               ),
               child: const Text('У вас уже есть аккаунт? Войти'),
             ),
@@ -97,3 +95,6 @@ class Splash4 extends StatelessWidget {
     );
   }
 }
+
+
+
