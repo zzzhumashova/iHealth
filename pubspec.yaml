@@ -23,6 +23,10 @@ flutter:
   uses-material-design: true
   assets:   
     - assets/img/
+    - assets/img/icon.png
+    - assets/img/image.png
+    - assets/img/image2.png
+    - assets/img/image3.png
     - assets/img/profile_image.webp
     - assets/img/streptodermiya2.jpg
     - assets/img/exemaa.jpg

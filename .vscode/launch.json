@@ -8,7 +8,7 @@
             "name": "ihealthapp",
             "request": "launch",
             "type": "dart",
-            "program": "lib/features/homePage/main.dart"
+            "program": "lib/features/splashPage/app_splash.dart"
         },
         {
             "name": "ihealthapp (profile mode)",
