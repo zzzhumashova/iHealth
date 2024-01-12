@@ -20,7 +20,7 @@ class NavigationPageState extends State<NavigationPage> {
     const HomePage(),
     const DiagnosticPage(pageTitle: 'Diagnostic'),
     const HealthImprove(pageTitle: 'Health Improve'),
-    const DoctorsPage(pageTitle: 'Doctors'),
+    const DoctorsPage(),
     const ProfileMainPage(),  
   ];
 

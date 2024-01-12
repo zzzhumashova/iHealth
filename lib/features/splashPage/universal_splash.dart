@@ -29,7 +29,8 @@ class UniversalSplashScreen extends StatelessWidget {
           Positioned.fill(
             child: Image.asset(
               backgroundImage,
-              fit: BoxFit.cover, // Ensures the image covers the screen without distortion
+              fit: BoxFit
+                  .cover, // Ensures the image covers the screen without distortion
             ),
           ),
           // Gradient overlay on the image
@@ -40,7 +41,8 @@ class UniversalSplashScreen extends StatelessWidget {
                   colors: [
                     Colors.black.withOpacity(0.3), // Slightly dark at the top
                     Colors.transparent, // Transparent in the middle
-                    Colors.black.withOpacity(0.7), // Darker at the bottom to highlight the text
+                    Colors.black.withOpacity(
+                        0.7), // Darker at the bottom to highlight the text
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -71,19 +73,22 @@ class UniversalSplashScreen extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.white, // White color for text to be visible on dark gradient
+                color: Colors
+                    .white, // White color for text to be visible on dark gradient
               ),
             ),
           ),
           // Floating action button positioned at the bottom of the screen
           Positioned(
-            left: 0,
-            right: 0,
+            left: 150,
+            right: 150,
             bottom: 20,
             child: FloatingActionButton(
-              onPressed: onNavigateForward, // Callback for button press
-              backgroundColor: const Color(0xFFBBF2EF), // Theme color for the button
-              child: const Icon(Icons.arrow_forward), // Icon inside the button
+              onPressed: onNavigateForward, // Callback при нажатии на кнопку
+              backgroundColor: const Color(0xFFBBF2EF), // Иконка внутри кнопки
+              // ignore: prefer_const_constructors
+              shape: CircleBorder(), // Цвет фона кнопки
+              child: const Icon(Icons.arrow_forward),
             ),
           ),
         ],

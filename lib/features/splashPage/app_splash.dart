@@ -48,7 +48,7 @@ class FourthSplashScreen extends StatelessWidget {
       currentPage: 2,
       totalPages: 3,
       onNavigateForward: () {
-        Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SignUpPage(pageTitle: 'Sign Up bolady',)));
+        Navigator.of(context).push(MaterialPageRoute(builder: (_) =>  SignUp()));
       },
     );
   }
