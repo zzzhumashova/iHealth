@@ -18,7 +18,7 @@ class NavigationPageState extends State<NavigationPage> {
 
   final List<Widget> _pages = [
     const HomePage(),
-    const DiagnosticPage(pageTitle: 'Diagnostic'),
+    const DiagnosticPage(pageTitle: 'Диагностика',),
     const HealthImprove(pageTitle: 'Health Improve'),
     const DoctorsPage(pageTitle: 'Doctors'),
     const ProfileMainPage(),  

@@ -8,7 +8,7 @@ import 'package:image_picker/image_picker.dart';
 
 class ProfileInfo extends StatefulWidget {
   const ProfileInfo({super.key});
-  
+
   @override
   State<ProfileInfo> createState() => _ProfileInfoState();
 }
@@ -22,7 +22,8 @@ class _ProfileInfoState extends State<ProfileInfo> {
   File? _image;
 
   Future getImage() async {
-    final pickedFile = await ImagePicker().pickImage(source: ImageSource.gallery);
+    final pickedFile =
+        await ImagePicker().pickImage(source: ImageSource.gallery);
     setState(() {
       if (pickedFile != null) {
         _image = File(pickedFile.path);
@@ -48,8 +49,11 @@ class _ProfileInfoState extends State<ProfileInfo> {
     setState(() {
       isEdited = true;
     });
-    Navigator.pop(context);
+    Navigator.pop(
+      context,
+    );
   }
+
   @override
   void initState() {
     super.initState();
@@ -98,7 +102,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
           flexibleSpace: const FlexibleSpaceBar(
             titlePadding: EdgeInsets.only(top: 20),
             title: Text(
-              'Редактировать профиль',
+              'Профиль',
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.black,
@@ -117,9 +121,10 @@ class _ProfileInfoState extends State<ProfileInfo> {
               iconSize: 20,
               onPressed: () {
                 Navigator.pop(
-                context,
-                MaterialPageRoute(builder: (context) => const ProfileMainPage()),
-              );
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ProfileMainPage()),
+                );
               },
             ),
           ),
@@ -152,9 +157,10 @@ class _ProfileInfoState extends State<ProfileInfo> {
                   const SizedBox(height: 33),
                   CircleAvatar(
                     radius: 75,
-                    backgroundImage: _image != null 
-                      ? FileImage(_image!)
-                      : const AssetImage('assets/img/profile_image.webp') as ImageProvider,
+                    backgroundImage: _image != null
+                        ? FileImage(_image!)
+                        : const AssetImage('assets/img/profile_image.webp')
+                            as ImageProvider,
                   ),
                   const SizedBox(height: 5),
                   GestureDetector(
@@ -204,7 +210,8 @@ class _ProfileInfoState extends State<ProfileInfo> {
                               color: Color.fromRGBO(0, 0, 0, 1),
                             ),
                             border: OutlineInputBorder(
-                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide(
                                 color: Color.fromRGBO(235, 235, 235, 1),
                                 width: 1.0,
@@ -251,7 +258,8 @@ class _ProfileInfoState extends State<ProfileInfo> {
                               color: Color.fromRGBO(0, 0, 0, 1),
                             ),
                             border: OutlineInputBorder(
-                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide(
                                 color: Color.fromRGBO(235, 235, 235, 1),
                                 width: 1.0,
